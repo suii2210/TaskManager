@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to bottom right, #4c2a85, #37254f);
+    color: white;
+  }
+  
+  /* Container */
+  .task-manager-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Card */
+  .task-manager-card {
+    background-color: #4c308d;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* Header */
+  .task-manager-header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Form */
+  .task-manager-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task-input,
+  .task-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #6c4fa7;
+    border-radius: 8px;
+    background-color: #5a3e96;
+    color: white;
+    outline: none;
+  }
+  
+  .task-input:focus,
+  .task-select:focus {
+    border-color: #9d79d6;
+    box-shadow: 0 0 4px #9d79d6;
+  }
+  
+  .task-button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Task List */
+  .task-list {
+    margin-top: 20px;
+  }
+  
+  .task-list-header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c4fa7;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .task-item-content {
+    flex-grow: 1;
+  }
+  
+  .task-item-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .task-item-content p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #d4bfff;
+  }
+  
+  .task-type {
+    font-weight: bold;
+    color: #facc15;
+  }
+  
+  .task-delete-button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-delete-button:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Empty Tasks Message */
+  .no-tasks-message {
+    text-align: center;
+    margin-top: 10px;
+    color: #d4bfff;
+    font-style: italic;
+  }
+  
